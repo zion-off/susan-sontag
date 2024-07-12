@@ -2,17 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* styles/global.css */
+body {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse at 80% 350%, #F7F7EF 0%, #F7F7EF 80%, #E5E3D7 90%, #E5E3D7 100%);
+  /* background-image: -webkit-radial-gradient(
+    farthest-corner at 40px 40px,
+    #EAE7DE 0%,
+    #F7F7EF 100%
+  ); */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "LTCCaslonSmallCaps";
+  src: url("/fonts/LTCCaslonSmallCaps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
