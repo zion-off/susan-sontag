@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2rem;
+}
+
+.hero {
+  height: 100%;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.topDivider {
+  width: 60%;
+  height: 1px;
+  background-color: #6665607b;
+  mask: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  mix-blend-mode: difference;
+}
+
+.topText {
+  font-family: "LTCCaslonSmallCaps";
+  font-size: 24pt;
+  color: #666560;
+  line-height: 1.1cap;
+  padding-top: 1rem;
+}
+
+.lowerText {
+  width: 50%;
+  font-family: "Garamond";
+  color: #666560;
+  font-style: italic;
+}
+
+.bottomDivider {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  mask: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+
+.leftLine {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #6665607b;
+}
+
+.author {
+  font-family: "LTC Caslon Swash W01 Swash";
+  color: #666560;
+}
+
+.rightLine {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #6665607b;
+}
+
+.portrait {
+  /* border: 5px solid #666560; */
+  mask: linear-gradient(to bottom, transparent 0%, black 20%);
+}
+
+@media (max-width: 768px) {
+  .topDivider {
+    width: 90%;
+  }
+
+  .bottomDivider {
+    width: 90%;
+  }
+
+  .topText {
+    font-family: "LTCCaslonSmallCaps";
+    font-size: 20pt;
+    color: #666560;
+  }
+
+  .lowerText {
+    width: 90%;
+    font-family: "Garamond";
+    color: #666560;
+    font-style: italic;
+  }
+}

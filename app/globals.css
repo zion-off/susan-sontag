@@ -6,17 +6,25 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(ellipse at 80% 350%, #F7F7EF 0%, #F7F7EF 80%, #E5E3D7 90%, #E5E3D7 100%);
-  /* background-image: -webkit-radial-gradient(
-    farthest-corner at 40px 40px,
-    #EAE7DE 0%,
-    #F7F7EF 100%
-  ); */
+  background: radial-gradient(
+    ellipse at 80% 350%,
+    #f7f7ef 0%,
+    #f7f7ef 80%,
+    #e5e3d7 90%,
+    #e5e3d7 100%
+  );
 }
 
 @font-face {
   font-family: "LTCCaslonSmallCaps";
   src: url("/fonts/LTCCaslonSmallCaps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LTC Caslon Swash W01 Swash";
+  src: url("/fonts/LTC Caslon Swash W01 Swash.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

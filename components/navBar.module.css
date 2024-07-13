@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoText {
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0.5rem;
+  font-family: "LTCCaslonSmallCaps";
+  color: #3c3c3c;
+  font-size: 10pt;
+}
+
+.navBar {
+  font-family: "LTCCaslonSmallCaps";
+  font-size: 16pt;
+  color: rgb(153, 153, 153);
+  display: flex;
+  gap: 3rem;
+}
+
+.navBar li {
+  transition: color 0.3s linear, text-shadow 0.3s linear;
+}
+
+.navBar li:hover {
+  color: #3c3c3c;
+  text-shadow: 2px 2px 20px #3c3c3c76;
+}

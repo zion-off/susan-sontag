@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list {
+  display: flex;
+  font-family: "LTCCaslonSmallCaps";
+  color: rgb(153, 153, 153);
+  font-size: 9pt;
+  gap: 1rem;
+}
+
+.list li {
+  transition: color 0.3s linear;
+}
+
+.list li + .list li {
+  border-left: solid 1px rgb(153, 153, 153);
+}
+
+.list li:hover {
+  color: #3c3c3c;
+}
+
+.text {
+  font-family: "Georgia", "Times New Roman", "Times", serif;
+  color: rgb(153, 153, 153);
+  font-size: 8pt;
+}
