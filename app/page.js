@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import NavBar from "@/components/navBar";
+import Banner from "@/components/banner";
 import Footer from "@/components/footer";
 import Blob from "@/components/blob";
 
@@ -10,20 +11,12 @@ export default function Home() {
       <NavBar />
       <div className={styles.hero}>
         <Blob />
-        <div className={styles.topDivider}></div>
-        <h1 className={`${styles.topText} text`}>
-          if literature has engaged me as a project,
-        </h1>
-        <p className={`${styles.lowerText} text`}>
-          first as a reader, then as a writer, it is an extension of my
-          sympathies to other selves, other domains, other dreams, other worlds,
-          other territories.
-        </p>
-        <div className={styles.bottomDivider}>
-          <span className={styles.leftLine}></span>
-          <p className={styles.author}>Susan Sontag</p>
-          <span className={styles.rightLine}></span>
-        </div>
+        <Banner
+          topText={"if literature has engaged me as a project,"}
+          lowerText={
+            "first as a reader, then as a writer, it is an extension of my sympathies to other selves, other domains, other dreams, other worlds, other territories."
+          }
+        />
         <Image
           className={styles.portrait}
           style={{ mixBlendMode: "darken" }}
@@ -35,7 +28,7 @@ export default function Home() {
           height={400}
         />
       </div>
-      <Footer />
+        <Footer additionalStyles={"styles.extraPadding"} />
     </main>
   );
 }

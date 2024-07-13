@@ -6,7 +6,7 @@ import styles from "./blob.module.css";
 export default function Blob() {
   useEffect(() => {
     const blob = document.getElementById("blob");
-    const hoverables = document.querySelectorAll(".text");
+    const hoverables = document.querySelectorAll(".hoverable");
     let handleMouseMove = (event) => {
       blob.style.left = `${event.clientX}px`;
       blob.style.top = `${event.clientY}px`;

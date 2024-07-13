@@ -1,12 +1,17 @@
+import Link from "next/link";
 import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
     <main className={styles.main}>
       <ul className={styles.list}>
-        <li>HOME</li>
+        <li>
+          <Link href="/">HOME</Link>
+        </li>
         <li>PRIZE FOR TRANSLATION</li>
-        <li>SUSAN SONTAG</li>
+        <li>
+          <Link href="/susan-sontag">SUSAN SONTAG</Link>
+        </li>
         <li>ABOUT</li>
         <li>EVENTS</li>
         <li>DONATE</li>

@@ -1,0 +1,51 @@
+.main {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.container {
+  font-family: "Georgia", "Times New Roman", "Times", serif;
+  font-size: 13px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectionOne, .sectionThree {
+  display: flex;
+  gap: 1rem;
+  max-width: 50%;
+  justify-content: flex-start;
+  color: #3c3c3c;
+}
+
+.sectionTwo {
+  display: flex;
+  gap: 1rem;
+  max-width: 50%;
+  justify-content: flex-start;
+  color: #3c3c3c;
+}
+
+.bioImage {
+max-height: 8vh;
+  max-width: 40vw;
+  max-height: fit-content;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .sectionOne,
+  .sectionTwo,
+  .sectionThree {
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+}

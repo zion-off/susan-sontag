@@ -37,3 +37,60 @@
   color: #3c3c3c;
   text-shadow: 2px 2px 20px #3c3c3c76;
 }
+
+/* mobile styles */
+
+.openButton {
+  display: none;
+  font-family: "LTCCaslonSmallCaps";
+  color: #3c3c3c;
+  cursor: pointer;
+  transition: color 0.3s linear;
+}
+
+.openButton:hover {
+  color: #989898;
+}
+
+.hamburgerMenu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e5e3d7;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburgerList {
+  font-family: "LTCCaslonSmallCaps";
+  color: #3c3c3c;
+  text-align: center;
+  font-size: 16pt;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-decoration: underline;
+}
+
+.closeButton {
+  font-family: "LTCCaslonSmallCaps";
+  color: #3c3c3c;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .openButton {
+    display: block;
+  }
+  .navBar {
+    display: none;
+  }
+}
